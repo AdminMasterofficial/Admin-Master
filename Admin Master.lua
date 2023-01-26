@@ -19,7 +19,7 @@ function CorrectKeyNotfication()
     })
 end
 
-function InCorrectKeyNotfication()
+function IncorrectKeyNotfication()
     StarterGui:SetCore("SendNotification", {
         Title = "Incorrect Key",
         Text = "You enter Incorrect key",
@@ -41,7 +41,7 @@ KeySection:NewButton("Enter key", "", function(Value)
         MakeScriptHub()
         Library:ToggleUI()
     else
-        InCorrectKeyNotfication()
+        IncorrectKeyNotfication()
     end
 end)
 
