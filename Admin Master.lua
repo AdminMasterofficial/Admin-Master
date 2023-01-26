@@ -21,8 +21,8 @@ end
 
 function InCorrectKeyNotfication()
     StarterGui:SetCore("SendNotification", {
-        Title = "InCorrect Key",
-        Text = "You enter incorrect key",
+        Title = "Incorrect Key",
+        Text = "You enter Incorrect key",
         Duration = 5,
     })
 end
