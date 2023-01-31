@@ -48,6 +48,6 @@ LoginTabSection:NewButton("Enter key", "", function(Value)
     end
 end)
 
-GetKeyTabSection:NewButton("Join our community official server", "", function()
+GetKeyTabSection:NewButton("Get Key", "", function()
     setclipboard("https://master-executor-official.erickdenisdavid.repl.co/Key%20Admin%20Master.html")
 end)
