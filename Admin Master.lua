@@ -49,5 +49,12 @@ LoginTabSection:NewButton("Enter key", "", function(Value)
 end)
 
 GetKeyTabSection:NewButton("Get Key", "", function()
+    
+    StarterGui:SetCore("SendNotification", {
+        Title = "Copied success";
+        Text = "Paste into the URL on the web browser";
+        Duration = 5;
+    })
+    
     setclipboard("https://master-executor-official.erickdenisdavid.repl.co/Key%20Admin%20Master.html")
 end)
