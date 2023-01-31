@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Key | Admin Master", "DarkTheme")
+local Window = Library.CreateLib("Key | Admin Master", "Ocean")
 
 local Player = game.Players.LocalPlayer
 local StarterGui = game:GetService("StarterGui")
@@ -27,14 +27,17 @@ function IncorrectKeyNotfication()
     })
 end
 
-local Key = Window:NewTab("Key")
-local KeySection = Key:NewSection("Key")
+local LoginTab = Window:NewTab("Login")
+local LoginTabSection = LoginTab:NewSection("Login")
 
-KeySection:NewTextBox("Key", "", function(Value)
+local GetKeyTab = Window:NewTab("Get key")
+local GetKeyTabSection = GetKeyTab:NewSection("Get Key")
+
+LoginTabSection:NewTextBox("Key", "", function(Value)
     _G.KeyInput = Value
 end)
 
-KeySection:NewButton("Enter key", "", function(Value)
+LoginTabSection:NewButton("Enter key", "", function(Value)
     if _G.KeyInput == _G.Key then
         CorrectKeyNotfication()
         wait(4)
@@ -45,6 +48,6 @@ KeySection:NewButton("Enter key", "", function(Value)
     end
 end)
 
-KeySection:NewButton("Join our community official server", "", function()
-    setclipboard("https://discord.gg/V8cWAw4ev4")
+GetKeyTabSection:NewButton("Join our community official server", "", function()
+    setclipboard("https://master-executor-official.erickdenisdavid.repl.co/Key%20Admin%20Master.html")
 end)
